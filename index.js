@@ -4,7 +4,7 @@ const User = require('./db/User');
 const Product = require('./db/Product');
 const cors = require('cors');
 const app = express();
-const port = 5000;
+const port = process.env.port ||  5000;
 
 app.use(express.json());
 app.use(cors());
